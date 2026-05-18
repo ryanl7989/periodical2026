@@ -99,6 +99,7 @@ a {
 }
 .picture {
   margin:auto;
+  border: 1px solid #d6d6d6;
 }
 .description {
   margin: auto;
