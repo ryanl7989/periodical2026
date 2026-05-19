@@ -107,7 +107,7 @@ img{
 }
 .description {
   margin: auto;
-  max-width:220px;
+  width:220px;
 }
 .name{
   margin: 16px 0px 5px 0px;
