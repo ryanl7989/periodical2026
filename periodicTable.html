@@ -4,11 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=BioRhyme:wght@200..800&family=Dongle&family=Gafata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* CSS */
       body {
@@ -43,15 +46,16 @@
             display: flex;
             flex-direction: column;
         }
-        h2{
+        h3{
             width:100vw;
         }
         p{
-            font-size: 10rem;
+            /* font-size: 10rem; */
             width: 100%;
         }
         #description{
-            width:90vw
+            width:90vw;
+            font-size:14.5px
         }
       }
       .top {
@@ -69,13 +73,15 @@
       .information {
         width: 50vw;
       }
-      h2 {
+      h3 {
         margin-left: 10vw;
+        font-size:23px !important;
+        margin-top:0.2vw;
       }
       #description {
         margin-left: 2vw;
         margin-right: 2vw;
-        font-size: 20px;
+        /* font-size: 20px; */
       }
       h1{
         text-align:center
@@ -100,34 +106,28 @@
     <!-- HTML -->
     <div class="idk">
       <div class="sec metals">
-        <h1>Metals</h1>
-        <div class="elements temp" id="metals"></div>
+        <h1 class = "inter-bold">Metals</h1>
+        <div class="elements temp " id="metals"></div>
       </div>
       <div class="sec metalloids">
-        <h1>Metalloids</h1>
+        <h1 class = "inter-bold">Metalloids</h1>
         <div class="elements temp" id="metalloids"></div>
       </div>
       <div classs="sec">
-        <h1>Nonmetals</h1>
+        <h1 class = "inter-bold">Nonmetals</h1>
         <div class="elements temp" id="nonmetals"></div>
       </div>
     </div>
     <div style="display: flex" id="canvas">
       <div class="information sec">
-        <h2 id="name"></h2>
-        <h2 id="symbol"></h2>
-        <h2 id="number"></h2>
-        <p id="description"></p>
+        <h3 id="name" class = "inter-regular"></h3>
+        <h3 id="symbol" class = "inter-regular"></h3>
+        <h3 id="number" class = "inter-regular"></h3>
+        <p id="description" class = "inter-regular"></p>
       </div>
       <div id="theCanvas" class="top"></div>
     </div>
-    <!-- <div class = "information">
-            <h2 id = "name"></h2>
-            <h2 id = "symbol"></h2>
-            <h2 id= "number"></h2>
-            <p id = "description"></p>
-         </div>
-         <div id = "theCanvas"></div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script>
